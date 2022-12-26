@@ -27,3 +27,7 @@ max_kcal = max(elves)
 max_elf = elves.index(max_kcal) + 1
 
 print(f'Elf {max_elf} has {max_kcal} kcal.')
+
+elves.sort(reverse=True)
+
+print(f'3 elves with most kcal combined have {elves[0] + elves[1] + elves[2]} kcal.')
