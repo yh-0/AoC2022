@@ -23,10 +23,7 @@ for line in lines:
     else:
         current += 1
 
-max_kcal = max(elves)
-max_elf = elves.index(max_kcal) + 1
-
-print(f'Elf {max_elf} has {max_kcal} kcal.')
+print(f'Elf {elves.index(max(elves)) + 1} has {max(elves)} kcal.')
 
 elves.sort(reverse=True)
 
